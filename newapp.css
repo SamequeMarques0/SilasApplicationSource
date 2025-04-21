@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html,*{
+    box-sizing: border-box;padding: 0;margin: 0; font-family: "Roboto", sans-serif;
+}
+:root {
+    --autografo: "Nothing You Could Do", cursive;
+    --main-font: 'Roboto', sans-serif;
+
+    --light : #fff;
+    --dark : #313131;
+
+    --li-list: 1px solid rgba(49, 49, 49, .2);
+}
+body{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: #c2c2c2;
+    font-family: var(--main-font);
+}
+#paper{
+    position: relative;
+    width: 840px;
+    height: 1184px;
+    background: #fff;
+    box-shadow: 5px 5px 45px rgba(0, 00, 0, .2);
+    overflow: hidden;
+    margin: 0 auto;
+}
+#paper::after{
+    content: "";
+    background: url(brading/model-four.png);
+    background-repeat: no-repeat;
+    width: 900px;
+    height: 600px;
+    position: absolute;
+    top: -40px;
+    left: -80px;
+    opacity: .03;
+    z-index: 1;
+}
+
+ul{display: inline-block;}
+li{list-style: none;}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    z-index: 100;
+}
+.brading{
+    width: 200px;
+    height: 100%;
+    background: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.brading > img{
+    width: 80%;
+}
+.info{
+    position: relative;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 4px;
+    right: 24px;
+}
+.info > div{
+     display: flex; 
+     font-weight: 700;
+}
+.itemA{
+    position: relative;
+}
+.itemA > span{
+    font-weight: 900;
+    margin-top: 90px;
+    letter-spacing: 1px;
+}
+.itemA::after{
+    content: "";
+    position: absolute;
+    bottom: -5PX;
+    left: 0;
+    width: 150px;
+    height: 3px;
+    background: var(--dark);
+}
+.itemB{
+    margin-top: 8px;
+}
+
+.itemA, .itemB, .itemC, .itemD{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.id,.d,.g{
+    font-weight: 600;
+}
+/* -------------------------- */
+.side{
+    position: relative;
+    top: 70px;
+    left: 40px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.group{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 10px 0;
+}
+.group > .client {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.group > .veiculo {
+    text-transform: uppercase;
+}
+.titleGroup{
+    position: relative;
+    font-weight: bolder;
+    margin: 10px 0;
+}
+.titleGroup::after{
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    content: '';
+    width: 160px;
+    height: 3px;
+    background: var(--dark);
+}
+.subGroup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+.subGroup > img {
+    width: 26px;
+}
+.subGroup > span {
+    font-size: 12px;
+}
+/* -------------------------- */
+
+#container{
+    position: absolute;
+    top: 230px;
+    left: 277px;
+    height: 400px;
+    width: 500px;
+    display: block;
+}
+.thead{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 0 80px;
+    background: var(--dark);
+    color: var(--light);
+}
+#container > ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+#container > ul > li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 2px 10px;
+    border-bottom: var(--li-list);
+    margin: 5px 0;
+    text-transform: uppercase;
+}
+#container > ul > li:last-child {
+    border-bottom: none;
+}
+/* ------------------------------- */
+
+.subFooter{
+    position: relative;
+    top: -110px;
+    left: 280px;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 540px;
+}
+.pagamento{
+    width: 230px;
+    display: flex;  
+    flex-direction: column;
+    gap: 10px;
+}
+.pagTitle{
+    height: 30px;
+    width: 180px;
+    background: var(--dark);
+    color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.pagItem{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.pagItem > h6{
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bolder;
+}
+.pagItem > ul {
+    position: relative;
+    left: 8px;
+}
+.pagItem > ul > li {
+    font-size: 11px;
+    margin: 5px;
+    list-style: circle;
+}
+/* ------------------------------ */
+.boxTotal{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.boxTotal > div {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+.boxTotal > span {
+    display: block;
+    width: 240px;
+    height: 4px;
+    background: var(--dark);
+    margin: 10px 0;
+}
+.desconto , .total{
+    font-size: 14px;
+}
+.desconto > .resultado, .total > .resultado {
+    font-size: 20px;
+    font-weight: bold;
+}
+.autografo{
+    font-family: var(--autografo);
+    font-size: 24px;
+}
+.autografo > img {
+    width: 60%;
+}
+.autografoDesc{
+    font-size: 8px;
+    letter-spacing: 1px;
+}
+/* -------------------- */
+footer {
+    position: relative;
+    bottom: 124px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 0 40px;
+}
+footer::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 70px;
+    background-color: var(--dark);
+    width: 700px;
+    height: 2px;
+}
+footer > span {
+    font-family: var(--main-font);
+    text-transform: uppercase;
+    font-weight: 900;
+    position: absolute;
+    top: 70px;
+    left: 90px;
+    letter-spacing: 1px;
+    color: var(--dark);
+
+}
+footer > a > img{
+    width: 90px;
+    position: absolute;
+    top: -10px;
+    right: 70px;
+}
